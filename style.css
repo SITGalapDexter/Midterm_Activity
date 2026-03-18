@@ -1,0 +1,147 @@
+:root {
+    --main-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #f4f6f8;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background: var(--main-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    animation: slideDown 0.7s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.profile {
+    width: 140px;
+    border-radius: 50%;
+    margin: 15px 0;
+    border: 3px solid var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+p {
+    color: #555;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+button {
+    background: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+footer {
+    background: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
