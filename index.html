@@ -20,14 +20,14 @@
 
 <main>
     <section class="welcome">
-        <div class="project-images">
-            <img src="bike1.png" alt="Project 1">
-            <img src="bike2.png" alt="Project 2">
-            <img src="bike3.png" alt="Project 3">
+        <div class="image-gallery">
+            <img src="images/project1.jpg" alt="Project 1">
+            <img src="images/project2.jpg" alt="Project 2">
+            <img src="images/project3.jpg" alt="Project 3">
         </div>
         <h2>Welcome to MotorTech Garage</h2>
         <p>Sharing my motorcycle builds with a twist of technology. Engine mods, coding-controlled systems, and digital design all in one place.</p>
-        <button>Explore Projects</button>
+        <button onclick="window.location.href='projects.html'">Explore Projects</button>
     </section>
 </main>
 
@@ -35,5 +35,10 @@
     <p>© 2026 MotorTech Garage</p>
 </footer>
 
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="">
+</div>
+<script src="modal.js"></script>
 </body>
 </html>
